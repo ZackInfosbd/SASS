@@ -1,0 +1,21 @@
+// .parent {
+//   font-weight: bold;
+// }
+
+// .parent .child {
+//   font-size: 20px;
+// }
+
+// .parent .child .grand-child {
+//   font-size: 15px;
+// }
+
+.parent {
+  font-weight: bold;
+  .child {
+    font-size: 20px;
+    .grand-child {
+      font-size: 15px;
+    }
+  }
+}

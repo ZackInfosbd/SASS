@@ -1,0 +1,11 @@
+.parent {
+  font-weight: bold;
+}
+.parent .child {
+  font-size: 20px;
+}
+.parent .child .grand-child {
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */

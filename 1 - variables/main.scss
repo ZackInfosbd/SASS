@@ -1,0 +1,32 @@
+// import Global Rules
+@use './layout/global-rules';
+
+// import pages
+@use './pages/contact';
+
+// import colors variables
+@use './variables/colors' as *;
+
+// global variable
+$alt_color: green;
+
+.header {
+  color: $alt_color;
+}
+
+.footer {
+  $alt_color: black !global;
+  background: $alt_color;
+}
+
+.copyright {
+  background: $alt_color;
+}
+
+.section {
+  background: $primary;
+}
+
+.aside {
+  background: $secondary;
+}
