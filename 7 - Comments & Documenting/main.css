@@ -1,0 +1,9 @@
+/* This comment will be shown in CSS File But not in compressed Mode */
+/*! This comment will be shown in CSS File And in compressed Mode */
+.box {
+  font-size: 20px;
+}
+
+/* this comment contains Interpolation ziko */
+
+/*# sourceMappingURL=main.css.map */

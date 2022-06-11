@@ -1,0 +1,25 @@
+//  Comments
+
+// This comment will be not shown in CSS File
+/* This comment will be shown in CSS File But not in compressed Mode */
+/*! This comment will be shown in CSS File And in compressed Mode */
+
+// comments in SCSS can be written anywhere
+// we can use even Interpolation/ dynamic comment in scss
+
+$company: 'ziko';
+
+.box /*Multiple
+ lines
+  comment*/ {
+  font-size: 20px; // inline comment
+}
+
+/* this comment contains Interpolation #{$company} */
+
+// Documentation comment
+/// Function To Do Bla Bla Bla
+///
+/// @param {num}
+/// The Number To Deal With
+/// @return {int}
