@@ -1,0 +1,19 @@
+// import Mixins
+@use './helpers/mixins' as *;
+
+ul.links {
+  @include list-reset;
+}
+
+// we can use mixing that includes an other mixing
+.circle-100 {
+  @include circle(100px);
+  background: red;
+  color: white;
+}
+
+.circle-200 {
+  @include circle(100px);
+  background: blue;
+  color: white;
+}
