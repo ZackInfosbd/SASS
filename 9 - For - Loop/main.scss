@@ -1,0 +1,19 @@
+// Loop => For
+
+@for $i from 1 through 10 {
+  .class-#{$i} {
+    // font-size: 10px;
+    font-size: #{$i + 10px};
+  }
+}
+
+$dimensions: 0;
+
+@for $i from 1 through 10 {
+  .circle-#{$dimensions + 100 } {
+    width: $dimensions + 100px;
+    height: $dimensions + 100px;
+    border-radius: 50%;
+  }
+  $dimensions: $dimensions + 100;
+}
