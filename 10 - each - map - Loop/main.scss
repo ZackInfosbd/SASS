@@ -1,0 +1,44 @@
+// each - maps - loop
+
+$themes: red, green, blue;
+
+@each $theme in $themes {
+  .#{$theme}-theme {
+    .product {
+      background: white;
+      border-bottom: 2px solid $theme;
+      .title {
+        color: $theme;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+$socials: (
+  'facebook': blue,
+  'youtube': red,
+  'github': black,
+  'twitter': rgb(35, 115, 235),
+);
+
+@each $name, $color in $socials {
+  .#{$name} {
+    background: $color;
+    color: white;
+    &::before {
+      content: $name;
+    }
+  }
+}
+
+$classes: 'one' 20px red, 'two' 15px green, 'three' 22px blue;
+
+@each $class, $font, $color in $classes {
+  .#{$class} {
+    font-size: $font;
+    background: $color;
+    color: white;
+    padding: $font / 2;
+  }
+}
